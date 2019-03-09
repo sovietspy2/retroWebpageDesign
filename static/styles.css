@@ -1,0 +1,56 @@
+body nav ul #logo {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 0 1em 0 1em;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.8em;
+  line-height: 1.8em;
+}
+
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+body nav {
+  width: 100%;
+}
+
+body nav ul {
+  margin: 0px !important;
+  padding: 0px !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: yellow;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#search a {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+body nav ul li:last-child {
+  margin-right: 10px;
+}
+
+body nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+body nav ul li a {
+  text-decoration: none !important;
+}
