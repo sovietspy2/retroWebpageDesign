@@ -10,13 +10,25 @@ body nav ul #logo {
   line-height: 1.8em;
 }
 
+header {
+  display: none !important;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0px !important;
   padding: 0px !important;
 }
 
 body nav {
+  background-color: yellow;
   width: 100%;
+  padding: 1em;
+  border-bottom: 4px solid #d3d3d3;
 }
 
 body nav ul {
@@ -24,7 +36,7 @@ body nav ul {
   padding: 0px !important;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: yellow;
+
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -62,7 +74,6 @@ main {
 }
 
 article {
-  background-color: aqua;
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -70,7 +81,6 @@ article {
 }
 
 aside {
-  background-color: red;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
@@ -131,7 +141,69 @@ section .post_bottom {
   align-items: center;
 }
 
+footer {
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-color: blue;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+main aside {
+  margin: 1em;
+}
+
+main aside .categories {
+  max-width: 17.9%;
+  position: fixed;
+  background-color: honeydew;
+  padding: 0.5em;
+  border: 2px solid black;
+}
+
+main .ads .author_info {
+  padding: 1em;
+  color: white;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  transform: translateY(1rem);
+  max-width: 18% !important;
+  min-width: 18% !important;
+  position: fixed !important;
+  background-color: #212529;
+  border: 3px solid palevioletred;
+}
+
+main .ads .author_info p {
+  font-size: 0.5em;
+}
+
+.author_info .github {
+  line-height: 0.5em;
+  display: inline-flex;
+  justify-content: start;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author_info .github p {
+  padding-top: 2.2em;
+}
+
 @media (max-width: 1000px) {
+  main .ads .author_info {
+    display: none;
+    max-width: 26.2% !important;
+    min-width: 26.2% !important;
+  }
+  main aside .categories {
+    max-width: 27.2%;
+  }
   main {
     grid-template-columns: 30% auto;
   }
