@@ -39,7 +39,7 @@ body nav ul {
 
   list-style-type: none;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
 }
 
@@ -47,6 +47,10 @@ body nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+nav ul li form input {
+  width: 10em;
 }
 
 #search a {
@@ -108,7 +112,7 @@ section {
 section .img_wrapper img {
   height: 100%;
   width: auto;
-  border: 5px solid black;
+  border: 5px solid green;
 }
 
 section .img_wrapper {
@@ -160,7 +164,7 @@ main aside .categories {
   position: fixed;
   background-color: honeydew;
   padding: 0.5em;
-  border: 2px solid black;
+  border: 3px solid red;
 }
 
 main .ads .author_info {
