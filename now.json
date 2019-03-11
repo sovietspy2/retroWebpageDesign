@@ -3,6 +3,7 @@
   "name": "static",
   "builds": [
     { "src": "index.html", "use": "@now/html-minifier" },
-    { "src": "./static/styles.css", "use": "@now/html-minifier" }
+    { "src": "./static/styles.css", "use": "@now/html-minifier" },
+    { "src": "./static/nes.css", "use": "@now/html-minifier" }
   ]
 }
