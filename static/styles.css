@@ -249,4 +249,8 @@ main .ads .author_info p {
   aside {
     display: none !important;
   }
+  footer {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+  }
 }
